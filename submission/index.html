@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Alam Indonesia</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .banner-section {
+            position: relative;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .gallery-slider {
+            align-items: center;
+        }
+
+        .gallery-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
+            .card {
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Flexbox adjustments */
+        .container-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white p-4">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="images/logo.png" alt="Logo Wisata Alam Indonesia" class="logo" width="50">
+            <h1>Wisata Alam Indonesia</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#destinations" class="nav-link text-white">Destinasi</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link text-white">Galeri</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">Tentang Kami</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section -->
+        <section id="home" class="banner-section">
+            <img src="images/banner.jpg" alt="Pemandangan Alam Indonesia" class="img-fluid w-100">
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="container py-5">
+            <h2 class="text-center mb-4">Destinasi Wisata</h2>
+            <div class="row">
+                <article class="col-md-4">
+                    <div class="card">
+                        <img src="images/destinasi-1.jpg" class="card-img-top" alt="Raja Ampat">
+                        <div class="card-body">
+                            <h5 class="card-title">Raja Ampat</h5>
+                            <p class="card-text">Raja Ampat adalah surga dunia yang terkenal dengan keindahan bawah lautnya.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="card">
+                        <img src="images/destinasi-2.jpg" class="card-img-top" alt="Gunung Bromo">
+                        <div class="card-body">
+                            <h5 class="card-title">Gunung Bromo</h5>
+                            <p class="card-text">Gunung Bromo menawarkan pemandangan alam yang menakjubkan dan trekking yang menantang.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="card">
+                        <img src="images/destinasi-3.jpg" class="card-img-top" alt="Lake Toba">
+                        <div class="card-body">
+                            <h5 class="card-title">Lake Toba</h5>
+                            <p class="card-text">Lake Toba adalah danau vulkanik terbesar di dunia yang menawarkan pemandangan menakjubkan.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="container py-5">
+            <h2 class="text-center mb-4">Tentang Kami</h2>
+            <div class="container-flex">
+                <aside class="col-md-4">
+                    <img src="images/foto-profil.jpg" alt="Foto Admin" class="img-fluid rounded-circle mb-3">
+                    <h3 class="text-center">Admin Wisata Alam Indonesia</h3>
+                    <p class="text-center">Saya adalah seorang pecinta alam yang ingin berbagi keindahan alam Indonesia melalui website ini.</p>
+                </aside>
+                <article class="col-md-8">
+                    <p>Website ini bertujuan untuk memperkenalkan berbagai destinasi wisata alam terbaik di Indonesia, dengan berbagai informasi yang berguna untuk perjalanan Anda.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container py-5">
+            <h2 class="text-center mb-4">Kontak Kami</h2>
+            <ul class="list-unstyled text-center">
+                <li>Email: info@wisataalamindonesia.com</li>
+                <li>Telepon: +62 123 456 789</li>
+                <li>Alamat: Jl. Wisata Alam No.10, Jakarta, Indonesia</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4">
+        <p class="text-center">&copy; 2024 Wisata Alam Indonesia. Semua hak dilindungi.</p>
+        <p class="text-center"><a href="#contact" class="text-white">Hubungi Kami</a> | <a href="#about" class="text-white">Tentang Kami</a></p>
+    </footer>
+</body>
+</html>
