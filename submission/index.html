@@ -1,147 +1,141 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisata Alam Indonesia</title>
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles */
-        .banner-section {
-            position: relative;
-        }
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Profil Wisata Jelajah Alam</title>
+    
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
 
-        .banner-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.5);
-            padding: 2rem;
-            border-radius: 10px;
-        }
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Wisata Jelajah Alam</h1>
+        <p>
+          Temukan keindahan alam Indonesia dengan petualangan yang tak terlupakan, menjelajahi hutan, gunung, dan sungai yang menakjubkan.
+        </p>
+      </div>
 
-        .gallery-slider {
-            align-items: center;
-        }
-
-        .gallery-images {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        @media (max-width: 768px) {
-            .banner-text {
-                font-size: 1.5rem;
-                padding: 1rem;
-            }
-            .card {
-                margin-bottom: 1rem;
-            }
-        }
-
-        /* Flexbox adjustments */
-        .container-flex {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .card {
-            margin-bottom: 1.5rem;
-        }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="bg-primary text-white p-4">
-        <div class="container d-flex align-items-center justify-content-between">
-            <img src="images/logo.png" alt="Logo Wisata Alam Indonesia" class="logo" width="50">
-            <h1>Wisata Alam Indonesia</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="#destinations" class="nav-link text-white">Destinasi</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link text-white">Galeri</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white">Tentang Kami</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#destinasi">Destinasi</a>
+          </li>
+          <li>
+            <a href="#medan">Medan Petualangan</a>
+          </li>
+          <li>
+            <a href="#tips">Tips & Panduan</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Banner Section -->
-        <section id="home" class="banner-section">
-            <img src="images/banner.jpg" alt="Pemandangan Alam Indonesia" class="img-fluid w-100">
-        </section>
+      <!-- Konten artikel -->
+      <div id="content">
+        <article id="destinasi" class="card">
+          <h2>Destinasi Alam Terbaik</h2>
+          <img src="assets/images/destinasi.jpeg" alt="destinasi alam" class="featured-image" />
+          <p>
+            Indonesia memiliki banyak destinasi alam yang menakjubkan, mulai dari pegunungan tinggi, pantai berpasir putih, hingga hutan tropis yang lebat. Setiap tempat menawarkan pengalaman yang unik dan pemandangan yang luar biasa.
+          </p>
 
-        <!-- Destinations Section -->
-        <section id="destinations" class="container py-5">
-            <h2 class="text-center mb-4">Destinasi Wisata</h2>
-            <div class="row">
-                <article class="col-md-4">
-                    <div class="card">
-                        <img src="images/destinasi-1.jpg" class="card-img-top" alt="Raja Ampat">
-                        <div class="card-body">
-                            <h5 class="card-title">Raja Ampat</h5>
-                            <p class="card-text">Raja Ampat adalah surga dunia yang terkenal dengan keindahan bawah lautnya.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md-4">
-                    <div class="card">
-                        <img src="images/destinasi-2.jpg" class="card-img-top" alt="Gunung Bromo">
-                        <div class="card-body">
-                            <h5 class="card-title">Gunung Bromo</h5>
-                            <p class="card-text">Gunung Bromo menawarkan pemandangan alam yang menakjubkan dan trekking yang menantang.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md-4">
-                    <div class="card">
-                        <img src="images/destinasi-3.jpg" class="card-img-top" alt="Lake Toba">
-                        <div class="card-body">
-                            <h5 class="card-title">Lake Toba</h5>
-                            <p class="card-text">Lake Toba adalah danau vulkanik terbesar di dunia yang menawarkan pemandangan menakjubkan.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+          <p>
+            Beberapa destinasi terkenal yang bisa dijelajahi antara lain Taman Nasional Bromo Tengger Semeru, Gunung Rinjani di Lombok, serta keindahan tersembunyi di Raja Ampat. Untuk penggemar petualangan, pendakian ke puncak gunung berapi atau menjelajahi hutan lebat bisa menjadi pilihan menarik.
+          </p>
+        </article>
 
-        <!-- About Us Section -->
-        <section id="about" class="container py-5">
-            <h2 class="text-center mb-4">Tentang Kami</h2>
-            <div class="container-flex">
-                <aside class="col-md-4">
-                    <img src="images/foto-profil.jpg" alt="Foto Admin" class="img-fluid rounded-circle mb-3">
-                    <h3 class="text-center">Admin Wisata Alam Indonesia</h3>
-                    <p class="text-center">Saya adalah seorang pecinta alam yang ingin berbagi keindahan alam Indonesia melalui website ini.</p>
-                </aside>
-                <article class="col-md-8">
-                    <p>Website ini bertujuan untuk memperkenalkan berbagai destinasi wisata alam terbaik di Indonesia, dengan berbagai informasi yang berguna untuk perjalanan Anda.</p>
-                </article>
-            </div>
-        </section>
+        <article id="medan" class="card">
+          <h2>Medan Petualangan</h2>
+          <img src="assets/images/medan.jpeg" alt="medan petualangan" class="featured-image" /> 
+          <p>
+            Setiap medan petualangan memiliki tantangannya sendiri, baik itu jalur pendakian yang curam, arus sungai yang deras, atau hutan dengan jalur yang belum terjelajahi. Persiapan yang matang dan pengetahuan tentang medan sangat penting untuk keselamatan selama perjalanan.
+          </p>
 
-        <!-- Contact Section -->
-        <section id="contact" class="container py-5">
-            <h2 class="text-center mb-4">Kontak Kami</h2>
-            <ul class="list-unstyled text-center">
-                <li>Email: info@wisataalamindonesia.com</li>
-                <li>Telepon: +62 123 456 789</li>
-                <li>Alamat: Jl. Wisata Alam No.10, Jakarta, Indonesia</li>
-            </ul>
-        </section>
+          <p>
+            Pastikan untuk mengetahui medan yang akan dijelajahi, serta mempersiapkan peralatan yang sesuai seperti sepatu gunung, peralatan mendaki, atau pakaian tahan air. Perencanaan yang baik akan membantu menjaga keselamatan dan kenyamanan selama petualangan.
+          </p>
+        </article>
+
+        <article id="tips" class="card">
+          <h2>Tips & Panduan</h2>
+          <p>
+            Petualangan di alam membutuhkan persiapan yang baik. Berikut beberapa tips yang bisa membantu menjadikan petualangan Anda aman dan menyenangkan:
+          </p>
+
+          <section>
+            <h3>Persiapan Mendaki Gunung</h3>
+            <img src="assets/images/mendaki.jpeg" alt="persiapan mendaki" class="featured-image" />
+            <p>
+              Pastikan Anda membawa peralatan yang memadai seperti peta, kompas, makanan ringan, dan air yang cukup. Kenali cuaca dan medan sebelum memulai pendakian, dan jangan lupa untuk berlatih fisik agar tubuh siap menghadapi tantangan.
+            </p>
+          </section>
+
+          <section>
+            <h3>Berkemah di Hutan</h3>
+            <img src="assets/images/berkemah.jpeg" alt="berkemah di hutan" class="featured-image" />
+            <p>
+              Pilih lokasi perkemahan yang aman, jauh dari tepi sungai atau lereng yang rawan longsor. Gunakan tenda yang tahan cuaca dan pastikan untuk membawa perlengkapan keamanan seperti pisau, lampu senter, dan alat pemadam api darurat.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Petualangan Alam</h2>
+            <p>Pengalaman tak terlupakan di alam bebas</p>
+            <figure>
+              <img src="assets/images/logo-jelajah.png" />
+              <figcaption>Lambang Petualangan</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3>Informasi Lainnya</h3>
+
+            <table>
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Musim Terbaik</th>
+                <td>April - September</td>
+              </tr>
+              <tr>
+                <th>Luas Hutan</th>
+                <td>942.000 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Gunung Tertinggi</th>
+                <td>Puncak Jaya</td>
+              </tr>
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white p-4">
-        <p class="text-center">&copy; 2024 Wisata Alam Indonesia. Semua hak dilindungi.</p>
-        <p class="text-center"><a href="#contact" class="text-white">Hubungi Kami</a> | <a href="#about" class="text-white">Tentang Kami</a></p>
+    <footer>
+      <p>Petualangan Alam Indonesia &#169; 2024, Jelajah Nusantara</p>
     </footer>
-</body>
+  </body>
 </html>
